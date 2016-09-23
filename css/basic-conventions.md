@@ -44,12 +44,12 @@ All of the items nested inside of an element are more readable if you follow the
         background-color: $blue;
         position: relative;
         width: auto;                /** 3. Attributes */
+                                    
+        &:hover { ... }             /** 4. Pseudo-classes */
+                                    
+        &::before { ... }           /** 5. Pseudo-elements */
         
-        &.selector-class { ... }    /** 4. Classes */
-                                    
-        &:hover { ... }             /** 5. Pseudo-classes */
-                                    
-        &::before { ... }           /** 6. Pseudo-elements */
+        &.selector-class { ... }    /** 6. Classes */
                                     
         a { ... }
         
