@@ -44,16 +44,20 @@ All of the items nested inside of an element are more readable if you follow the
         background-color: $blue;
         position: relative;
         width: auto;                /** 3. Attributes */
+        
+        &.selector-class { ... }    /** 4. Classes */
                                     
-        &:hover { ... }             /** 4. Pseudo-classes */
+        &:hover { ... }             /** 5. Pseudo-classes */
                                     
-        &::before { ... }           /** 5. Pseudo-elements */
+        &::before { ... }           /** 6. Pseudo-elements */
                                     
         a { ... }
+        
         h2 { ... }
-        span { ... }                /** 6. Elements */
+        
+        span { ... }                /** 7. Nested Elements */
                                     
-        .selector-class             /** 7. Classes */
+        .selector-class { ... }     /** 8. Nested Classes */
     }
 
 > **Line-breaks:** I'm a huge fan of white space. Some people are comfortable jamming everything together, but a simple double line-break is an easy way to visually separate concepts.
@@ -183,7 +187,6 @@ See the full, official, curated-by-someone-else list of pseudo-elements at [Mozi
 
 <img src="../_images/lying-in-your-beds.jpg" alt="Lying in your beds" title="Lying in your beds" width="480px;"/>
 
-> <small>Please note, this convention is not at all meant to replace splitting CSS into [single-responsibility files and directories](../project-structure/basic-conventions.md#scss). If you disagree with this approach, please refer to [the FAQ](#faq-you).
 
 <a id="markdown-ids" name="ids"></a>
 ### ID's
